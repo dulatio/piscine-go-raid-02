@@ -54,6 +54,9 @@ func main() {
 }
 
 func solve(board [][]int, finalboard [][]int, counter *int) bool {
+	if *counter > 1 {
+		return false
+	}
 	row := -1
 	col := -1
 	isFull := true
